@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Coffee Shop Gallery & Slideshow</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>Riya 's Coffee Shop Gallery</h1>
+
+<!-- Image Gallery -->
+<div class="gallery" aria-label="Coffee shop image gallery">
+  <div class="main-image-container">
+    <img id="mainImage" class="main-image" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" alt="Freshly brewed coffee in a rustic cup" tabindex="0" />
+    <div id="mainCaption" class="caption">Freshly brewed coffee in a rustic cup</div>
+  </div>
+  
+  <div class="thumbnails" role="list">
+  <img src="coffee1-thumb.jpg" alt="Freshly brewed coffee in a rustic cup" class="active" tabindex="0"
+       data-large="coffee1-large.jpg" data-caption="Freshly brewed coffee in a rustic cup" />
+  <img src="coffee2-thumb.jpg" alt="Latte art on coffee" tabindex="0"
+       data-large="coffee2-large.jpg" data-caption="Latte art on coffee" />
+  <img src="coffee3-thumb.jpg" alt="Coffee beans close-up" tabindex="0"
+       data-large="coffee3-large.jpg" data-caption="Coffee beans close-up" />
+  <img src="coffee4-thumb.jpg" alt="Coffee shop interior with warm light" tabindex="0"
+       data-large="coffee4-large.jpg" data-caption="Coffee shop interior with warm light" />
+</div>
+
+
+<!-- Image Slideshow -->
+<div class="slideshow" aria-label="Coffee shop automatic image slideshow" tabindex="0">
+  <div class="slides">
+  <div class="slide">
+    <img src="coffee1-large.jpg" alt="Freshly brewed coffee in a rustic cup" />
+    <div class="slide-caption">Freshly brewed coffee in a rustic cup</div>
+  </div>
+  <div class="slide">
+    <img src="coffee2-large.jpg" alt="Latte art on coffee" />
+    <div class="slide-caption">Latte art on coffee</div>
+  </div>
+  <div class="slide">
+    <img src="coffee3-large.jpg" alt="Coffee beans close-up" />
+    <div class="slide-caption">Coffee beans close-up</div>
+  </div>
+  <div class="slide">
+    <img src="coffee4-large.jpg" alt="Coffee shop interior with warm light" />
+    <div class="slide-caption">Coffee shop interior with warm light</div>
+  </div>
+</div>
+  <div class="nav-arrow nav-left" aria-label="Previous slide" role="button" tabindex="0">&#10094;</div>
+  <div class="nav-arrow nav-right" aria-label="Next slide" role="button" tabindex="0">&#10095;</div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
